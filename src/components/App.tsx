@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import { Landing } from './Landing';
 import Portfolio from './Portfolio';
+import { Dashboard } from './Dashboard';
 
 const App: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const App: React.FC = () => {
         <Landing/>
       </Route>
       <Route path="/portfolio" exact>
-        <Portfolio />
+        <Dashboard />
       </Route>
     </Switch>
   );
