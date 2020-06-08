@@ -3,7 +3,6 @@ import React from 'react';
 import jazzicon from 'jazzicon';
 import { ethers, utils } from 'ethers';
 import { BigNumber } from 'utils/bignumber';
-import { SUPPORTED_THEMES } from '../theme';
 
 // Utils
 export const MAX_GAS = utils.bigNumberify('0xffffffff');
@@ -64,7 +63,7 @@ export function getQueryParam(windowLocation, name) {
 }
 
 export function checkSupportedTheme(themeName) {
-    if (themeName && themeName.toUpperCase() in SUPPORTED_THEMES) {
+    if (themeName && themeName.toUpperCase() in {}) {
         return themeName.toUpperCase();
     }
     return null;
