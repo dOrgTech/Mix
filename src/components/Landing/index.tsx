@@ -5,8 +5,7 @@ import { ReactComponent as MixIcon } from "../../assets/logo/Mix.svg";
 import { ReactComponent as DxDAOIcon } from "../../assets/logo/DxDao.svg";
 import { ReactComponent as WalletConnectIcon } from "../../assets/logo/WalletConnect.svg";
 import { ReactComponent as MetamaskIcon } from "../../assets/logo/Metamask.svg";
-import { TextInput } from "../Input";
-import { IconButton } from "../IconButton";
+import { TextInput, IconButton } from "../shared";
 import { useStyles } from "./styles";
 
 const { Content } = Layout;
