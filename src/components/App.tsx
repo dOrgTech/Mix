@@ -1,20 +1,14 @@
 import React from 'react';
-import { Col, Row, Typography, Button } from 'antd'
-const { Title } = Typography
+import { Switch, Route } from 'react-router-dom';
+import { Landing } from './Landing';
 
 const App: React.FC = () => {
   return (
-    <>
-      <Row>
-        <Col span={8}/>
-        <Col span={8}>
-          <Title>Mix.eth</Title>
-          <Button type="primary">
-            Testing antd
-          </Button>
-        </Col>
-      </Row>
-    </>
+    <Switch>
+      <Route path="/" exact>
+        <Landing/>
+      </Route>
+    </Switch>
   );
 }
 
