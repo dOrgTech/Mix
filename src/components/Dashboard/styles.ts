@@ -6,8 +6,6 @@ export const useStyles = createUseStyles({
     background: StyleConstants.backgroundColor,
     height: "100vh"
   },
-  contentContainer: {
-  },
   leftSider: {
     background: StyleConstants.backgroundColor,
     borderRight: StyleConstants.borderPrimary,
@@ -57,25 +55,67 @@ export const useStyles = createUseStyles({
     top: "64.29%",
     bottom: "21.43%",
   },
-  tabButton: {
-    borderRadius: 32,
-  },
   buttonText: {
-    fontStyle: "normal",
-    fontWeight: "500",
-    fontSize: "14px",
-    lineHeight: "16px",
-    display: "flex",
-    alignItems: "center",
     letterSpacing: "0.4px",
     color: "#FAFAFA",
-    paddingTop: "4px"
+    border: 'unset',
+    height: 40,
+    "&:hover": {
+      background: "rgba(132, 255, 255, 0.05)",
+      color: "#FAFAFA",
+    },
   },
-  tabIcon: {
+  selectedButtonText: {
+    letterSpacing: "0.4px",
+    color: "#79E8EA !important",
+    border: 'unset',
+    borderRadius: "32px !important",
+    background: "rgba(132, 255, 255, 0.05) !important",
+    height: 40,
+  },
+  mixLogo: {
+    fontSize: 24,
+    left: "11.51%",
+    right: "71.22%",
+    position: "absolute"
+  },
+  logoSize: {
+    fontSize: 24
+  },
+  connection: {
     position: "absolute",
-    left: "11.27%",
-    right: "71.83%",
-    top: "20%",
-    bottom: "20%",
+    width: "169px",
+    height: "36px",
+    left: "20px",
+    top: "32px",
+    border: "1px solid #325661",
+    boxSizing: "border-box",
+    borderRadius: "32px",
+  },
+  addressAvatar: {
+    position: "absolute",
+    left: "7.69%",
+    right: "80.47%",
+    top: "22.22%",
+    bottom: "22.22%",
+    fontSize: 20
+  },
+  address: {
+    position: "absolute",
+    left: "26.63%",
+    right: "30.18%",
+    top: "27.78%",
+    bottom: "27.78%",
+    fontSize: "14px",
+    lineHeight: "16px",
+    alignItems: "center",
+    color: "#E3E4E5",
+  },
+  arrow: {
+    position: "absolute",
+    left: "78.11%",
+    right: "7.69%",
+    top: "27.67%",
+    bottom: "16.67%"
   }
 });

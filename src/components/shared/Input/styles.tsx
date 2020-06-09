@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-import { StyleConstants } from "../../constants/styles";
+import { StyleConstants } from "../../../constants/styles";
 
 export const useStyles = createUseStyles({
   input: {
